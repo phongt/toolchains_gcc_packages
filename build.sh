@@ -25,9 +25,12 @@ case $ARCH in
   arm64|aarch64)
     TARGET_TRIPLET="aarch64-unknown-linux-gnu"
     ;;
+  riscv64)
+    TARGET_TRIPLET="riscv64-unknown-linux-gnu"
+    ;;
   *)
     echo "Unsupported architecture: $ARCH"
-    echo "Supported architectures: x86_64, arm64/aarch64"
+    echo "Supported architectures: x86_64, arm64/aarch64, riscv64"
     exit 1
     ;;
 esac
